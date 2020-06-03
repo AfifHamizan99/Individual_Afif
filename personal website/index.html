@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Individual Afif</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<div class="background">
+	<div class="nav">
+		<a class="a active" href="#">Home</a>
+		<a class="b" href="#">La Galería</a>
+		<a class="c" href="#">Reach Me</a>
+	</div>
+
+	<div class="content">
+	
+		<div class="home">
+			<h1>I am a student</h1><br>
+			<p> The name that has been given to me by my parents is Muhammad Afif Hamizan bin Noor Azam. Born on November 26th 1999. I am the oldest child in my family. I enjoy taking pictures every time I go out as my hobby or to fill the free time that I have.
+			<br><br>
+			I am currently studying at UiTM Kampus Rembau, I am a final year student and the things that happening to the world right now may be the reason that I will not have the opportunity to attend any final year celebration and spending my time with my friends.
+			<br><br>
+			Nowadays, all classes are being conducted online and I am one of those students who are not too keen to this type of learning and teaching. It makes learning way harder especially subjects like coding and something that need the interaction between the students and the lecturers.
+			<br><br>
+			In this website, I'll show you some of the pictures that has been taken by me all around the country by me. It can be said that these pictures are about all my journey.
+			</p>
+		</div>
+
+	<div class="gallery">
+		<div class="image">
+			<img src="images/1.jpg" />
+		</div>
+		<div class="image">
+			<img src="images/2.jpg" />
+		</div>
+		<div class="image">
+			<img src="images/3.jpg" />
+		</div>
+		<div class="image">
+			<img src="images/9.jpg" />
+		</div>
+		<div class="image">
+			<img src="images/7.jpg" />
+		</div>
+		<div class="image">
+			<img src="images/6.jpg" />
+		</div>
+		<div class="image">
+			<img src="images/8.jpg" />
+		</div>	
+		<div class="image">
+			<img src="images/image.jpg" />
+		</div>	
+	</div>
+
+	<div class="ReachMe">
+	<style></style>
+	<h1>You Can Reach Me Through These Apps:-</h1>
+	<a href="https://www.instagram.com/afif_hmzn/" class="fa fa-instagram fa-5x"></a>
+	<a href="https://www.facebook.com/afif.hamizan.39750" class="fa fa-facebook fa-5x"></a>
+		
+	</div>
+
+</div>
+	
+</div>
+
+
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('a').click(function(){
+		//alert("i am click");
+		var selected = $(this);
+		$('a').removeClass('active');
+		$(selected).addClass('active');
+	});
+	var $a = $('.a'),
+	$b = $('.b'),
+	$c = $('.c'),
+	$home = $('.home'),
+	$gallery = $('.gallery'),
+	$ReachMe = $('.ReachMe');
+
+	$a.click(function(){
+		$home.fadeIn();
+		$gallery.fadeOut();
+		$ReachMe.fadeOut();
+	});
+	$b.click(function(){
+		$gallery.fadeIn();
+		$home.fadeOut();
+		$ReachMe.fadeOut();
+	});
+	$c.click(function(){
+		$ReachMe.fadeIn();
+		$home.fadeOut();
+		$gallery.fadeOut();
+	});
+});
+</script>
+</body>
+</html>
